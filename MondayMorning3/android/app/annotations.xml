@@ -1,0 +1,5 @@
+<root>
+    <item name='android.app.Dialog void dismiss()'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
