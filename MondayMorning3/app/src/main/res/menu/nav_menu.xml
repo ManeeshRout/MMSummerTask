@@ -3,30 +3,30 @@
     <group>
         <item android:id="@+id/nav_item_one"
 
-            android:title="Item 1" />
+            android:title="Favorites" />
         <item android:id="@+id/nav_item_two"
 
-            android:title="Item 2" />
+            android:title="Settings" />
         <item android:id="@+id/nav_item_three"
 
-            android:title="Item 3" />
+            android:title="Contact Us" />
     </group>
 
     <group android:id="@+id/group_menu">
         <item android:id="@+id/nav_item_four"
-            android:title="Item 4" />
+            android:title="Health and Emergency" />
         <item android:id="@+id/nav_item_five"
-            android:title="Item 5" />
+            android:title="Halls of residence" />
     </group>
 
-    <item android:title="Title 1">
+    <item android:title="Student Activity Centre">
         <menu>
             <item android:id="@+id/nav_item_six"
 
-                android:title="Item 6" />
+                android:title="Rate This App" />
             <item android:id="@+id/nav_item_seven"
 
-                android:title="Item 7" />
+                android:title="Share This App" />
         </menu>
     </item>
 </menu>

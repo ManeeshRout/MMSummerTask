@@ -69,10 +69,9 @@ public class This_Week extends Fragment  {
                         try {
                             JSONObject jsonObject = new JSONObject( response );
                             JSONArray array = jsonObject.getJSONArray( "posts" );
-                            for (int i =0 ; i<array.length();i++)
-                            {
+                            for (int i = 0; i < array.length(); i++) {
                                 JSONObject o = array.getJSONObject( i );
-                                ListItem item=new ListItem(
+                                ListItem item = new ListItem(
                                         o.getString( "authors" ),
                                         o.getString( "post_title" ),
                                         o.getInt( "post_hits" ),
@@ -82,7 +81,7 @@ public class This_Week extends Fragment  {
                                 listItems.add( item );
                             }
 
-                            adapter = new MyAdapter( listItems,getApplicationContext() );
+                            adapter = new MyAdapter( listItems, getApplicationContext() );
                             recyclerView.setAdapter( adapter );
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -96,10 +95,9 @@ public class This_Week extends Fragment  {
 
 
                     }
-                });
+                } );
         RequestQueue requestQueue = Volley.newRequestQueue( this );
         requestQueue.add( stringRequest );
-        )
+    }
 
     }
-}

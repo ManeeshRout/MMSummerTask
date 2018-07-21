@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:id="@+id/idtoolbar"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="#fff"
+
+        app:layout_collapseMode="pin"
+
+        android:elevation="4dp"
+
+        app:layout_scrollFlags="scroll|enterAlways"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+        <android.support.constraint.ConstraintLayout
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+
+                android:id="@+id/textView"
+
+                android:layout_width="335dp"
+
+                android:layout_height="28dp"
+
+                android:layout_gravity="center"
+
+                android:layout_marginEnd="30dp"
+
+                android:layout_marginStart="30dp"
+
+                android:ellipsize="end"
+
+                android:text="Title"
+
+                android:textColor="#000"
+
+                android:textSize="20sp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.0"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <ImageView
+
+                android:layout_width="47dp"
+
+                android:layout_height="wrap_content"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+
+                app:layout_constraintHorizontal_bias="1.0"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/article_recycler"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        android:layout_below="@id/toolbar"/>
+
+
+
+
+
+</RelativeLayout>
